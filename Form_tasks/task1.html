@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="taskstyle.css">
+        <title>Band Camp Registeration</title>
+    </head>
+
+    <body>
+        <div>
+            <form>
+              <div class="form">
+                <div class="header">
+                  <img src="C:\Users\knsur\OneDrive\Desktop\Claysis files\Second\high-school-band-logo.png" alt="band logo" class="logo">
+                  <h1>Band Camp Registration</h1>
+                </div>
+          
+                <h2>Student Information</h2>
+                <div class="row">
+                    <div class="col">
+                      <label for="fname" style="font-weight: bold;">Name<span style="color: red;">*</span></label>
+                      <input type="text" id="fname" name="fname" placeholder="First" required>
+                    </div>
+                    <div class="col">
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last" required>
+                    </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col">
+                    <label for="dob" style="font-weight: bold;">Date of Birth<span style="color: red;">*</span></label>
+                    <input type="date" id="dob" required>
+                  </div>
+                  <div class="col">
+                    <label for="email" style="font-weight: bold;">Email<span style="color: red;">*</span></label>
+                    <input type="email" id="email" required>
+                  </div>
+                  <div class="col">
+                    <label for="grade" style="font-weight: bold;">Grade<span style="color: red;">*</span></label>
+                    <input type="text" id="grade" required>
+                  </div>
+                </div>
+          
+                <div class="full-width">
+                  <label for="address1" style="font-weight: bold; margin-top: 15px;">Address<span style="color: red;">*</span></label>
+                  <input type="text" id="address1" placeholder="Address Line 1" required>
+                  <input type="text" id="address2" placeholder="Address Line 2">
+                </div>
+          
+                <div class="row">
+                  <div class="col">
+                    <input type="text" id="city" placeholder="City" required>
+                  </div>
+                  <!-- drop down default show state-->
+                  <div class="col">
+                    <select id="state" name="state" required>
+                      <option value="" selected disabled id="st">State</option>
+                      <option value="kerala">Kerala</option>
+                      <option value="tamilnadu">Tamil Nadu</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <input type="text" id="zip" placeholder="Zip Code" required>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col">
+                    <label for="tshirt" style="font-weight: bold; margin-top: 15px;">T-shirt Size<span style="color: red;">*</span></label>
+                    <select id="tshirt" name="tshirt" required>
+                      <option value="" disabled selected></option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+
+                    <p class="ttext">Select a T-shirt size to view the amount due at the bottom of the form.</p>
+
+                  </div>
+                  <div class="col">
+                    <label for="instrument" style="font-weight: bold; margin-top: 15px;">Instrument<span style="color: red;">*</span></label>
+                    <select id="instrument" name="instrument" required>
+                      <option value="" disabled selected></option>
+                      <option value="Drums">Drums</option>
+                      <option value="Clarinet">Clarinet</option>
+                      <option value="Trumpet">Trumpet</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="full-width">
+                  <label style="font-weight: bold; font-size: 16px;">Does your student have any food allergies that program staff should consider?<span style="color: red;">*</span></label>
+                  <div class="radio-group">
+                    <input type="radio" id="allyes" name="allergies" value="yes" >
+                    <label for="allyes">Yes</label>
+                    <input type="radio" id="allno" name="allergies" value="no">
+                    <label for="allno">No</label>
+                  </div>
+                </div>
+          
+                <h2>Parent/Guardian Information</h2>
+          
+                <div class="row">
+                  <div class="col">
+                    <label for="pfname" style="font-weight: bold;">Name<span style="color: red;">*</span></label>
+                    <input type="text" id="pfname" placeholder="First" required>
+                  </div>
+                  <div class="col">
+                    <label for="plname">Last Name*</label>
+                    <input type="text" id="plname" placeholder="Last" required>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col">
+                    <label for="pphone" style="font-weight: bold; margin-top: 10px;">Phone<span style="color: red;">*</span></label>
+                    <input type="tel" id="pphone" required>
+                  </div>
+                  <div class="col">
+                    <label for="pemail" style="font-weight: bold; margin-top: 10px;">Email<span style="color: red;">*</span></label>
+                    <input type="email" id="pemail" required>
+                  </div>
+                </div>
+          
+                <button type="submit" id="sub">Submit</button>
+              </div>
+            </form>
+          </div>
+    </body>
+</html>
