@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>CSS Tutorials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style>
+p.center {
+  text-align: center;
+  color: rgb(248, 248, 248);
+  background-image: url("grad.jpg");
+  border: outset;
+
+}
+
+
+
+p.long::first-line{
+
+    color: red;
+
+}
+
+
+
+
+h1.center{
+    background-color: rgb(255, 170, 14);
+    border: solid 2px rgb(18, 27, 205);
+    opacity: 0.8;/* 0.0 to 1.0 */
+}
+
+body{
+
+    background-image: url("wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-image: url("ec7937c374876a9225ac44b857f42f09.png");*/
+}
+
+#sakura{
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#beautiful{
+    border-top-style: dotted;
+    border-bottom-style:solid;
+    border-color: rgb(255, 223, 40);
+    background-color: white;
+    text-transform: uppercase;
+}
+
+#quote
+{
+    background-color: white;
+    margin: auto;
+    border: 2px black solid;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    outline-style: dashed;
+    outline-offset: 10px;
+    font-style: italic;
+}
+
+#apple{
+
+    text-align: center; /*this only for horizontal alignment*/
+    font-size: medium;
+}
+
+td, th {
+  border-bottom: 1px solid;
+  padding: 5px;
+  text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+
+}
+div.japan{
+
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    overflow: scroll;
+}
+
+div.minmax{
+
+    background-color: burlywood;
+    border: 2px solid green;
+    margin: auto;
+    width: max(40%,300px);
+    overflow: none;
+}
+
+div.japan:hover{
+    background-color: bisque;
+}
+.flexample{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    max-width: 600px;
+    
+}
+.flexample>div{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="center">Wont be affected</h1>
+<h2 style="text-shadow: 3px 3px grey; color: red; text-align: center;"> Marvel Cinematic universe</h2>
+
+<p class="center">Only changes This</p> 
+
+<p id="beautiful">Sakura tree is beautiful</p>
+<p style="border-left: red 7px solid; background-color: lightblue;">All trees are beautiful</p>
+
+<p id="quote">The day you catch an idea you love, even a small one, is a beautiful day.</p>
+
+<p id="apple"> Apple a day keeps doctor away</p>
+
+<p style="text-decoration: underline; color: blue;"> This is not a link but used text-decoration</p>
+
+<p>list of food</p>
+<ol style="list-style-type: upper-roman; margin: 0; padding: 0;">
+    <li> coffee</li>
+    <li>pasta</li>
+</ol><br>
+
+<input type="button" value="Click" onclick="alert('Hello')">
+<table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+
+<!-- overflow example div below-->
+ <p>Example of overflow and pseudo class hover</p>
+ 
+ <div class="japan">A Japanese verse form most often composed, in English versions, of three unrhymed lines of five, seven, and five syllables. A haiku often features an image, or a pair of images, meant to depict the essence of a specific moment in time.</div>
+
+ <div class="minmax"> to check min max css</div>
+
+<p class="long">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. </p>
+
+<div class="flexample">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+
+</body>
+</html>
