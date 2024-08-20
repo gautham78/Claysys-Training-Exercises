@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saying Hello</title>
+</head>
+<body>
+    <h3 id="demo"></h3><hr>
+    <p id="arit1"></p>
+    <p id="arit2"></p>
+    <p id="arit3"></p>
+    <p id="arit4"></p><hr>
+    <p id="oe"></p><hr>
+    <p id="onehund"></p>
+
+
+    <script>
+        document.getElementById("demo").innerHTML= "Hello"+ ' ' + "World";
+        function calc(a,b)
+        {
+            document.getElementById("arit1").innerHTML= "Addition: "+(a+b);
+            document.getElementById("arit2").innerHTML="Subtraction: "+(a-b);
+            document.getElementById("arit3").innerHTML="Mul: "+(a*b);
+            document.getElementById("arit4").innerHTML="Div: "+(a/b);
+        }
+
+        function oddeven(c){
+            if (c%2==0){
+                document.getElementById("oe").innerHTML="Even";
+            }
+            else{
+            document.getElementById("oe").innerHTML="Odd";}
+        }
+
+        function tohund(n){
+            for(let i=1;i<=n;i++){
+            
+            document.getElementById("onehund").innerHTML+=i+" ";
+            }
+        }
+    
+        calc(4,2);
+        oddeven(6);
+        tohund(100);
+    </script>
+    
+    
+</body>
+</html>

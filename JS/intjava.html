@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" inital-scale="1.0">
+    <title>JS Intro</title>
+
+</head>
+<body style="background-color: lightyellow;">
+
+<h1 style="font-weight: bold;">Js tutorial</h2>
+
+<button type="button" onclick="firstFunc()">Here</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<p>Initially it was <ins style="color: violet;">Rob</ins> not <ins style="color: red;">Justin</ins> , but since it got stored into another object and we changed using that second object , name changed</p>
+<p id="new"></p>
+
+<br>
+
+<pre style="border: 1px solid rgb(241, 81, 81); width: 600px;">Common HTML Events
+    Here is a list of some common HTML events:
+    
+    Event	Description
+    onchange	An HTML element has been changed
+    onclick	The user clicks an HTML element
+    onmouseover	The user moves the mouse over an HTML element
+    onmouseout	The user moves the mouse away from an HTML element
+    onkeydown	The user pushes a keyboard key
+    onload	The browser has finished loading the page</pre>
+
+<p id="new2"></p>
+<p id="new3"></p>
+
+
+
+<script>
+
+    function firstFunc(){
+
+        document.getElementById("demo").innerHTML = "You will be ok";
+
+    }
+
+    function calc(p,q){
+        return p + q;
+    }
+
+    let x = 2;
+    let y = 3;
+    let result=x+y;
+    document.getElementById("demo2").innerHTML = result;
+
+    /*If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated. 
+    Only if first number is in quotes. or else if its 2+5+"5" it would show 75*/
+    
+    document.getElementById("demo3").innerHTML = "5" + 2 + 5;
+
+    const real={name:"bob", age:"44", country:"Swiss",
+        car:function(){
+            return
+        }
+    };
+
+    delete real.age;
+
+
+    /*The delete keyword deletes both the value of the property and the property itself.
+    After deletion, the property cannot be used before it is added back again.*/
+
+
+    real.nationality = "germany";// can also overwrite already made name value pair
+
+    document.getElementById("demo4").innerHTML = "He is from" +" " + real.nationality;
+
+    let ans = calc(6,2);
+
+    document.getElementById("demo5").innerHTML=ans;
+
+    const escape = new Object();
+
+    escape.place = "calm";
+    escape.enjoyment = "full";
+
+    document.getElementById("demo6").innerHTML = "I want a "+escape.place+" place with "+escape.enjoyment+" enjoyment";
+
+    //object porperty below
+
+    
+    const first = {};
+
+    first.name="Rob";
+    first.age="22";
+
+    const second = first;
+
+    second.name="Justin";
+
+    document.getElementById("new").innerHTML= first.name;
+
+    const newar = ["v1","v2"];
+    newar[2]="v3";
+
+    const arr2 = ["a", "b", "c", "d"];
+
+
+
+    document.getElementById("new2").innerHTML= newar;
+    document.getElementById("new3").innerHTML= arr2.length;
+    
+
+
+
+    
+
+
+</script>
+
+<!-- Object Properties
+The named values, in JavaScript objects, are called properties.
+
+Property	Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue-->
+
+</body>
+</html>
