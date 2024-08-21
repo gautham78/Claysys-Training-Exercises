@@ -1,0 +1,99 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("C:/Users/knsur/OneDrive/Desktop/Training Exercises/JS/To-do/wallpaperflare.com_wallpaper.jpg");
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    width: 800px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+button#addTaskButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 100%;
+}
+
+button#addTaskButton:hover {
+    background-color: rgb(17, 91, 170);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: rgb(15, 221, 73);
+}
+
+button.complete,
+button.remove {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+button.complete {
+    background-color: rgb(40, 167, 69);
+}
+
+button.complete:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+button.remove {
+    background-color: rgb(220, 53, 69);
+}
+
+button.remove:hover {
+    background-color: rgb(200, 35, 51);
+}

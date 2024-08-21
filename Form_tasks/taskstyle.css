@@ -11,7 +11,7 @@ body {
   .form {
     background-color: rgb(217, 246, 217);
     max-width: 700px;
-    max-height: 1000px;
+    max-height: 1500px;
     padding: 20px;
     margin: 0 auto;
   }
@@ -94,7 +94,7 @@ body {
   label {
     display: block;
     margin-bottom: 5px;
-    border-radius: 5px;
+    
   }
   
   input[type="text"],
@@ -136,3 +136,15 @@ body {
 
     
   }
+
+  .errormsg {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+  #tshirt-errordiv {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

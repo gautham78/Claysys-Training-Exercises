@@ -2,8 +2,9 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
         <link rel="stylesheet" href="taskstyle.css">
+        
         <title>Band Camp Registeration</title>
     </head>
 
@@ -20,113 +21,151 @@
                 <div class="row">
                     <div class="col">
                       <label for="fname" style="font-weight: bold;">Name<span style="color: red;">*</span></label>
-                      <input type="text" id="fname" name="fname" placeholder="First" required>
+                      <input type="text" id="fname" name="fname" placeholder="First" required oninput="checkFirstName()">
+                      <span id="fname-error" class="errormsg">Please enter valid text (letters only).</span>
+                      
                     </div>
                     <div class="col">
                         <label for="lname">Last Name*</label>
-                        <input type="text" id="lname" name="lname" placeholder="Last" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last" required oninput="checkLastName()">
+                        <span id="lname-error" class="errormsg">Please enter valid text (letters only).</span>
                     </div>
                 </div>
           
                 <div class="row">
                   <div class="col">
                     <label for="dob" style="font-weight: bold;">Date of Birth<span style="color: red;">*</span></label>
-                    <input type="date" id="dob" required>
+                    <input type="date" id="dob" required onchange="checkDOB()">
+                    <span class="errormsg" id="dob-error">Please select your DOB.</span>
                   </div>
                   <div class="col">
                     <label for="email" style="font-weight: bold;">Email<span style="color: red;">*</span></label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" required oninput="checkEmail()">
+                    <span id="email-error" class="errormsg">Please enter a valid email.</span>
                   </div>
+
+
                   <div class="col">
                     <label for="grade" style="font-weight: bold;">Grade<span style="color: red;">*</span></label>
-                    <input type="text" id="grade" required>
+                    <input type="text" id="grade" required oninput="checkGrade()">
+                    <span id="grade-error" class="errormsg">Please enter your grade.</span>
+
                   </div>
                 </div>
           
                 <div class="full-width">
                   <label for="address1" style="font-weight: bold; margin-top: 15px;">Address<span style="color: red;">*</span></label>
-                  <input type="text" id="address1" placeholder="Address Line 1" required>
-                  <input type="text" id="address2" placeholder="Address Line 2">
+                  <input type="text" id="address1" placeholder="Address Line 1" required oninput="checkFirstAddress()">
+                  <span id="address1-error" class="errormsg">Please enter a valid address.</span>
+                  <input type="text" id="address2" placeholder="Address Line 2" oninput="checkSecondAddress()">
+                  <span id="address2-error" class="errormsg"></span>
                 </div>
           
                 <div class="row">
                   <div class="col">
-                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="city" placeholder="City" required oninput="cityCheck()">
+                    <span id="city-error" class="errormsg">Enter a valid city name.</span>
                   </div>
                   <!-- drop down default show state-->
+
                   <div class="col">
-                    <select id="state" name="state" required>
+                    <select id="state" name="state" required onblur="checkState()">
                       <option value="" selected disabled id="st">State</option>
                       <option value="kerala">Kerala</option>
                       <option value="tamilnadu">Tamil Nadu</option>
                     </select>
+                    <span class="errormsg" id="state-error">Please select an option.</span>
                   </div>
                   <div class="col">
-                    <input type="text" id="zip" placeholder="Zip Code" required>
+                    <input type="text" id="zip" placeholder="Zip Code" required oninput="checkZipCode()">
+                    <span id="zip-error" class="errormsg">Please enter a valid Zip Code.</span>
                   </div>
                 </div>
+
+
           
                 <div class="row">
                   <div class="col">
                     <label for="tshirt" style="font-weight: bold; margin-top: 15px;">T-shirt Size<span style="color: red;">*</span></label>
-                    <select id="tshirt" name="tshirt" required>
+                    <select id="tshirt" name="tshirt" onchange="checkTshirtSize()" onblur="checkTshirtSize()">
                       <option value="" disabled selected></option>
                       <option value="S">S</option>
                       <option value="M">M</option>
                       <option value="L">L</option>
                     </select>
-
+                    <span class="errormsg" id="tshirt-error" style="display:none; color:red;"></span>
                     <p class="ttext">Select a T-shirt size to view the amount due at the bottom of the form.</p>
 
                   </div>
                   <div class="col">
                     <label for="instrument" style="font-weight: bold; margin-top: 15px;">Instrument<span style="color: red;">*</span></label>
-                    <select id="instrument" name="instrument" required>
+                    <select id="instrument" name="instrument" required onchange="checkInstrument()" onblur="checkInstrument()">
                       <option value="" disabled selected></option>
                       <option value="Drums">Drums</option>
                       <option value="Clarinet">Clarinet</option>
                       <option value="Trumpet">Trumpet</option>
                     </select>
+                    <span id="instrument-error" class="errormsg" style="display:none;">Please select your instrument.</span>
                   </div>
                 </div>
+
+
+
+
           
                 <div class="full-width">
-                  <label style="font-weight: bold; font-size: 16px;">Does your student have any food allergies that program staff should consider?<span style="color: red;">*</span></label>
+                  <label style="font-weight: bold; font-size: 16px;">
+                      Does your student have any food allergies that program staff should consider?
+                      <span style="color: red;">*</span>
+                  </label>
                   <div class="radio-group">
-                    <input type="radio" id="allyes" name="allergies" value="yes" >
-                    <label for="allyes">Yes</label>
-                    <input type="radio" id="allno" name="allergies" value="no">
-                    <label for="allno">No</label>
+                      <input type="radio" id="allyes" name="allergies" value="yes" onchange="checkAllergies()" onblur="checkAllergies()">
+                      <label for="allyes">Yes</label>
+              
+                      <input type="radio" id="allno" name="allergies" value="no" onchange="checkAllergies()" onblur="checkAllergies()">
+                      <label for="allno">No</label>
                   </div>
-                </div>
+                  <span id="allergies-error" class="errormsg" >Please select an option.</span>
+              </div>
+
+
+
+
+
+                <!-- Parents detailsss-->
           
                 <h2>Parent/Guardian Information</h2>
           
                 <div class="row">
                   <div class="col">
                     <label for="pfname" style="font-weight: bold;">Name<span style="color: red;">*</span></label>
-                    <input type="text" id="pfname" placeholder="First" required>
+                    <input type="text" id="pfname" placeholder="First" required oninput="checkpFirstName()" >
+                    <span id="pfname-error" class="errormsg">Please enter valid text (letters only).</span>
                   </div>
                   <div class="col">
                     <label for="plname">Last Name*</label>
-                    <input type="text" id="plname" placeholder="Last" required>
+                    <input type="text" id="plname" placeholder="Last" required oninput="checkpLastName()">
+                    <span id="plname-error" class="errormsg">Please enter valid text (letters only).</span>
                   </div>
                 </div>
           
                 <div class="row">
                   <div class="col">
                     <label for="pphone" style="font-weight: bold; margin-top: 10px;">Phone<span style="color: red;">*</span></label>
-                    <input type="tel" id="pphone" required>
+                    <input type="tel" id="pphone" required oninput="checkPhoneNumber()">
+                    <span id="pphone-error" class="errormsg">Please enter valid phone number</span>
                   </div>
                   <div class="col">
                     <label for="pemail" style="font-weight: bold; margin-top: 10px;">Email<span style="color: red;">*</span></label>
-                    <input type="email" id="pemail" required>
+                    <input type="email" id="pemail" required oninput="checkpEmail()">
+                    <span id="pemail-error" class="errormsg">Please enter a valid email.</span>
                   </div>
                 </div>
           
-                <button type="submit" id="sub">Submit</button>
+                <button type="submit" id="sub" onclick="checkFields()" >Submit</button>
               </div>
             </form>
           </div>
+      <script src="taskscript.js"></script>
     </body>
 </html>
