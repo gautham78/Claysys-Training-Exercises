@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery Basics</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").hide();
+    $("#p2").hide();
+    $("#rem").remove();
+    $("#para1").text("New text");
+    $("a").attr("href","https://www.amazon.in/");
+    $("body").css("background-color","lightblue");
+
+  });
+
+  $("ul").prepend("<li>Cofee</li>");
+  $("ul").addClass("lists");
+}
+
+);
+
+
+
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+<p id="para1"> Old text</p>
+<p id="rem"> i will be removed. if u click this button</p>
+<a href="https://www.w3schools.com/jquery/jquery_get_started.asp">W3 schools link will turn into amazon.</a><br>
+<button>Click me</button>
+<ul>
+    <li>Tea</li>
+</ul>
+
+</body>
+</html>

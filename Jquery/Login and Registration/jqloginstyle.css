@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 231, 209);
+    color: rgb(139, 0, 0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgb(255, 255, 255); 
+    padding: 40px;
+    border: 1px solid rgb(221, 221, 221); 
+    width: 400px;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 10px;
+    color: rgb(139, 0, 0); /* Dark red */
+}
+
+header p {
+    margin-bottom: 30px;
+    color: rgb(139, 0, 0); /* Dark red */
+}
+
+.loginbox {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.loginbox label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(139, 0, 0); 
+}
+
+.loginbox input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(221, 221, 221); 
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(139, 0, 0); 
+}
+
+.forgot-password {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.forgot-password a {
+    color: rgb(139, 0, 0); 
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(139, 0, 0); 
+    border: 2px solid rgb(139, 0, 0); 
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(247, 231, 209); /
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer a {
+    color: rgb(139, 0, 0); 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: rgb(139, 0, 0); 
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}

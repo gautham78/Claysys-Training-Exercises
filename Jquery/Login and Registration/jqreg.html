@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="jqstyles.css">
+</head>
+<body>
+    <div class="registration-container">
+        <header>
+            <h2>Create Your Account</h2>
+            <p>Join us today and start your journey!</p>
+        </header>
+
+        <form id="regForm">
+            <div class="section">
+                <h3>Personal Information</h3>
+                <div class="row">
+                    <label for="firstName">First Name:</label>
+                    <div class="input-group">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span id="firstName-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="lastName">Last Name:</label>
+                    <div class="input-group">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span id="lastName-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="dob">Date of Birth:</label>
+                    <div class="input-group">
+                        <input type="date" id="dob" name="dob" required>
+                        <span id="dob-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Gender:</label>
+                    <div class="input-group">
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                        <span id="gender-error" class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Contact Information</h3>
+                <div class="row">
+                    <label for="phone">Phone Number:</label>
+                    <div class="input-group">
+                        <input type="tel" id="phone" name="phone" required placeholder="9092345678">
+                        <span id="phone-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="email">Email Address:</label>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Address</h3>
+                <div class="row">
+                    <label for="address">Address:</label>
+                    <div class="input-group">
+                        <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                        <span id="address-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="state">State:</label>
+                    <div class="input-group">
+                        <select id="state" name="state" required>
+                            <option value="" selected disabled></option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                        </select>
+                        <span id="state-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="city">City:</label>
+                    <div class="input-group">
+                        <select id="city" name="city" required>
+                            <option value="" selected disabled></option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                        <span id="city-error" class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Account Information</h3>
+                <div class="row">
+                    <label for="username">Username:</label>
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" required>
+                        <span id="username-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="password">Password:</label>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <span id="password-error" class="error-message"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <span id="confirmPassword-error" class="error-message"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="history.back()">Back</button>
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>Already have an account? <a href="Jqlogin.html">Log in</a></p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jqregvalid.js"></script>
+</body>
+</html>

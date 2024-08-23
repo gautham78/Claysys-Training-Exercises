@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Chap 2</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: azure;">
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fade">Fades out</button>
+<p id="text">ahoy mate</p>
+<button id="slide">Slideup</button>
+<div id="box" style="width:200px;height:200px;background-color:blue; color: white;">This div wud slide up using Slideup()</div>
+
+<script>
+  $("#hide").click(function() {
+    $("#text").hide();  
+  });
+
+  $("#show").click(function() {
+    $("#text").show();  
+  });
+
+  $("#fade").click(function() {
+    $("#text").fadeOut();  
+  });
+
+  $("#slide").click(function(){
+
+    $("#box").slideUp();
+
+  });
+</script>
+
+</body>
+</html>
