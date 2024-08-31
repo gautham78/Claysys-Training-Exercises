@@ -1,0 +1,7 @@
+C:\Users\knsur\source\repos\Adonet\Adonet\bin\Debug\Adonet.exe.config
+C:\Users\knsur\source\repos\Adonet\Adonet\bin\Debug\Adonet.exe
+C:\Users\knsur\source\repos\Adonet\Adonet\bin\Debug\Adonet.pdb
+C:\Users\knsur\source\repos\Adonet\Adonet\obj\Debug\Adonet.csproj.AssemblyReference.cache
+C:\Users\knsur\source\repos\Adonet\Adonet\obj\Debug\Adonet.csproj.CoreCompileInputs.cache
+C:\Users\knsur\source\repos\Adonet\Adonet\obj\Debug\Adonet.exe
+C:\Users\knsur\source\repos\Adonet\Adonet\obj\Debug\Adonet.pdb

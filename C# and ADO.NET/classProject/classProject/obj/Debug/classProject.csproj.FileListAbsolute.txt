@@ -1,0 +1,7 @@
+C:\Users\knsur\classProject\classProject\bin\Debug\classProject.exe.config
+C:\Users\knsur\classProject\classProject\bin\Debug\classProject.exe
+C:\Users\knsur\classProject\classProject\bin\Debug\classProject.pdb
+C:\Users\knsur\classProject\classProject\obj\Debug\classProject.csproj.AssemblyReference.cache
+C:\Users\knsur\classProject\classProject\obj\Debug\classProject.csproj.CoreCompileInputs.cache
+C:\Users\knsur\classProject\classProject\obj\Debug\classProject.exe
+C:\Users\knsur\classProject\classProject\obj\Debug\classProject.pdb

@@ -1,0 +1,7 @@
+C:\Users\knsur\Abstract and other\Abstract and other\bin\Debug\Abstract and other.exe.config
+C:\Users\knsur\Abstract and other\Abstract and other\bin\Debug\Abstract and other.exe
+C:\Users\knsur\Abstract and other\Abstract and other\bin\Debug\Abstract and other.pdb
+C:\Users\knsur\Abstract and other\Abstract and other\obj\Debug\Abstract and other.csproj.AssemblyReference.cache
+C:\Users\knsur\Abstract and other\Abstract and other\obj\Debug\Abstract and other.csproj.CoreCompileInputs.cache
+C:\Users\knsur\Abstract and other\Abstract and other\obj\Debug\Abstract and other.exe
+C:\Users\knsur\Abstract and other\Abstract and other\obj\Debug\Abstract and other.pdb
