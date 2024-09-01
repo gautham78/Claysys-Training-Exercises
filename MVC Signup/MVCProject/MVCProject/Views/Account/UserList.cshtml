@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MVCProject.Models.Register>
+
+@{
+    ViewBag.Title = "User List";
+}
+
+<h2>User List</h2>
+
+<p>
+    @Html.ActionLink("Create New User", "Signup", "Account", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.regID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.regname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.regID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.regname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.password)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.regID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.regID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.regID })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
